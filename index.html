@@ -119,13 +119,22 @@
   .wf .stat-line{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
   .wf .stat-line b{font-family:var(--disp);font-size:30px;color:var(--ink);display:block;line-height:1}
 
+  .wf .hero{min-height:680px;display:flex;align-items:flex-end;overflow:hidden;padding-top:120px}
+  .wf .hero .hero-bg{position:absolute;inset:0;border-radius:0;min-height:0}
+  .wf .hero .hero-bg em{position:absolute;top:28px;right:28px}
+  .wf .hero .slabel{z-index:2;color:#8b8e97}
+  .wf .hero .hero-in{position:relative;z-index:1;max-width:860px}
+  .wf .hero .h1{color:#fff}
+  .wf .dark .stat-line{border-color:#555a63;color:#cfd1d7}
+  .wf .dark .stat-line b{color:#fff}
+
   /* doors */
   .wf .door{padding:28px}
   .wf .door .h2{font-size:36px}
   .wf .door .sub{font-size:12.5px;margin-top:14px;color:var(--ink-3)}
 
   /* clubs */
-  .wf .bigtype{font-family:var(--disp);font-size:64px;line-height:.95;text-transform:uppercase;font-weight:700}
+  .wf .bigtype{font-family:var(--disp);font-size:48px;line-height:1;text-transform:uppercase;font-weight:700}
   .wf .bigtype span{display:block;color:var(--ink-3)}
   .wf .club .ph{min-height:170px;border-radius:8px 8px 0 0}
   .wf .club{padding:0;overflow:hidden}
@@ -188,7 +197,9 @@
     .wf .s{padding:52px 20px}
     .wf .h1{font-size:46px}
     .wf .h2{font-size:34px}
-    .wf .bigtype{font-size:40px}
+    .wf .bigtype{font-size:34px}
+    .wf .hero{min-height:620px;padding-top:96px}
+    .wf .hero .hero-bg em{top:auto;bottom:auto;right:12px;top:30px;left:12px;max-width:none;font-size:9.5px}
     .wf .door .h2{font-size:30px}
     .wf .g2,.wf .g3,.wf .cols{grid-template-columns:1fr;gap:16px}
     .wf .cols{gap:28px}
@@ -290,22 +301,20 @@
   </div>
 
   <!-- 01 HERO -->
-  <section class="s">
-    <span class="slabel">01 HERO</span>
-    <div class="cols">
-      <div>
-        <div class="eyebrow">Soho · Liverpool Street · Marylebone · Canary Wharf</div>
-        <h1 class="h1">London's home for independent health experts</h1>
-        <p class="body">Rent gym, treatment, medical and dental space by the hour, with no lease and no revenue share. Or tell us your goal and we'll match you with the right practitioner.</p>
-        <div class="btnrow"><span class="btn">Apply now</span><span class="btn ghost">Find a practitioner</span></div>
-        <div class="stat-line">
-          <div><b class="tbc" title="600+ on today's homepage, 500+ on every 2026 page">500+</b>practitioners</div>
-          <div><b class="tbc" title="46 on today's homepage, 50+ on every 2026 page">50+</b>disciplines</div>
-          <div><b>4</b>London clubs</div>
-          <div><b>300,000+</b>sessions delivered</div>
-        </div>
+  <section class="s hero dark">
+    <span class="slabel">01 HERO · BACKGROUND VIDEO</span>
+    <div class="ph hero-bg"><em>Background video, full bleed: real rooms + practitioners at work, 6 to 8 s muted loop, dark overlay for legibility (poster frame on mobile and reduced motion)</em></div>
+    <div class="hero-in">
+      <div class="eyebrow">Soho · Liverpool Street · Marylebone · Canary Wharf</div>
+      <h1 class="h1">London's home for independent health experts</h1>
+      <p class="body">Rent gym, treatment, medical and dental space by the hour, with no lease and no revenue share. Or tell us your goal and we'll match you with the right practitioner.</p>
+      <div class="btnrow"><span class="btn">Apply now</span><span class="btn ghost">Find a practitioner</span></div>
+      <div class="stat-line">
+        <div><b class="tbc" title="600+ on today's homepage, 500+ on every 2026 page">500+</b>practitioners</div>
+        <div><b class="tbc" title="46 on today's homepage, 50+ on every 2026 page">50+</b>disciplines</div>
+        <div><b>4</b>London clubs</div>
+        <div><b>300,000+</b>sessions delivered</div>
       </div>
-      <div class="ph tall"><em>Club film: real rooms + practitioners at work, cut to 6 to 8 s loop (poster frame on mobile)</em></div>
     </div>
   </section>
 
