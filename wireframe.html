@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UNTIL Homepage Wireframe</title>
-<meta name="description" content="New UNTIL homepage: lo-fi wireframe, desktop and mobile, v1 for review.">
+<meta name="description" content="UNTIL homepage wireframe.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -230,62 +230,37 @@
   }
   @media (max-width:560px){ .routes{grid-template-columns:1fr} }
   @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+  body{background:#fff}
+  .frame{max-width:none;border:0;border-radius:0;box-shadow:none;margin:0}
+  .wf .dock{display:none}
+  @container (max-width:600px){ .wf .dock{display:flex} .wf .hero .hero-bg em{left:auto;right:12px;top:16px} }
 </style>
 </head>
 <body>
-
-<div class="bar">
-  <b>UNTIL</b><span>New homepage · wireframe · v1 for review</span>
-  <nav class="jump">
-        <div class="seg" role="group" aria-label="Viewport">
-      <button id="v-desk" type="button" aria-pressed="true">Desktop</button>
-      <button id="v-mob" type="button" aria-pressed="false">Mobile</button>
-    </div>
-  </nav>
-</div>
-
-<!-- ════════════ WIREFRAME ════════════ -->
-<section class="zone" id="wireframe" style="padding-top:24px">
-    <div class="legend">
-    <i><span style="border-bottom:1.5px dotted var(--tbc)">Dotted pink</span> = to confirm with Bari (number, price or fact differs across the site)</i>
-    <i>All copy is draft, built from what UNTIL already says on its own pages</i>
-  </div>
-  <div class="frame desk" id="f-desk"></div>
-  <div class="frame mob" id="f-mob" hidden></div>
-</section>
-
-<template id="wf">
+<div class="frame">
 <div class="wf">
-
-  <!-- 00 NAV -->
   <div class="navwf">
     <span class="logo">UNTIL</span>
     <div class="links"><span>Find your space ▾</span><span>Memberships ▾</span><span>Why UNTIL</span><span>Locations ▾</span><span>Resources ▾</span></div>
     <div class="right"><span class="lnk">Find a practitioner</span><span class="btn sm">Apply now</span></div>
     <span class="burger">☰</span>
   </div>
-
-  <!-- 01 HERO -->
   <section class="s hero dark">
-    <span class="slabel">01 HERO · BACKGROUND VIDEO</span>
-    <div class="ph hero-bg"><em>Background video, full bleed: real rooms + practitioners at work, 6 to 8 s muted loop, dark overlay for legibility (poster frame on mobile and reduced motion)</em></div>
+    <div class="ph hero-bg"><em>Video</em></div>
     <div class="hero-in">
       <div class="eyebrow">Soho · Liverpool Street · Marylebone · Canary Wharf</div>
       <h1 class="h1">London's home for independent health experts</h1>
       <p class="body">Rent gym, treatment, medical and dental space by the hour, with no lease and no revenue share. Or tell us your goal and we'll match you with the right practitioner.</p>
       <div class="btnrow"><span class="btn">Apply now</span><span class="btn ghost">Find a practitioner</span></div>
       <div class="stat-line">
-        <div><b class="tbc" title="600+ on today's homepage, 500+ on every 2026 page">500+</b>practitioners</div>
-        <div><b class="tbc" title="46 on today's homepage, 50+ on every 2026 page">50+</b>disciplines</div>
+        <div><b>500+</b>practitioners</div>
+        <div><b>50+</b>disciplines</div>
         <div><b>4</b>London clubs</div>
         <div><b>300,000+</b>sessions delivered</div>
       </div>
     </div>
   </section>
-
-  <!-- 02 DOORS -->
   <section class="s band">
-    <span class="slabel">02 TWO DOORS</span>
     <div class="g2" style="margin-top:0">
       <div class="card door">
         <div class="eyebrow">For practitioners</div>
@@ -293,7 +268,7 @@
         <ul>
           <li>No lease. No revenue share. 30-day notice.</li>
           <li>Book space by the hour across all four clubs</li>
-          <li><span class="tbc" title="Count to confirm">500+</span> practitioners referring to each other</li>
+          <li><span>500+</span> practitioners referring to each other</li>
         </ul>
         <div class="btnrow"><span class="btn">Apply now</span><span class="lnk">Compare memberships</span></div>
         <p class="sub">Six quick questions. Thirty seconds.</p>
@@ -311,10 +286,7 @@
       </div>
     </div>
   </section>
-
-  <!-- 03 CLUBS -->
   <section class="s">
-    <span class="slabel">03 FOUR CLUBS</span>
     <div class="cols" style="align-items:end">
       <div class="bigtype">We're UNTIL.<span>But really, we're</span>Soho<br>Liverpool Street<br>Marylebone<br>Canary Wharf</div>
       <div>
@@ -323,22 +295,22 @@
       </div>
     </div>
     <div class="g4 clubs">
-      <div class="card club"><div class="ph"><em>Soho clubhouse photo</em></div><div class="in">
+      <div class="card club"><div class="ph"><em>Photo</em></div><div class="in">
         <div class="h3">Soho</div>
-        <div class="meta"><div data-i="adr">111 Charing Cross Road, WC2H <span class="tbc" title="0DU on terms page, 0DT on privacy policy">0DU</span></div><div data-i="tube">Tottenham Court Road · <span class="tbc" title="Walk time not on site">X min</span></div><div data-i="hrs">Mon to Thu 6am to 9pm</div></div>
+        <div class="meta"><div data-i="adr">111 Charing Cross Road, WC2H <span>0DU</span></div><div data-i="tube">Tottenham Court Road · <span>X min</span></div><div data-i="hrs">Mon to Thu 6am to 9pm</div></div>
         <div class="chips"><span class="chip">Gym</span><span class="chip">Treatment</span><span class="chip">Coaching</span><span class="chip">Therapy</span></div>
       </div></div>
-      <div class="card club"><div class="ph"><em>Liverpool St gym floor photo</em></div><div class="in">
+      <div class="card club"><div class="ph"><em>Photo</em></div><div class="in">
         <div class="h3">Liverpool St</div>
-        <div class="meta"><div data-i="adr">280 Bishopsgate, <span class="tbc" title="Postcode not on site">EC2</span></div><div data-i="tube"><span class="tbc" title="Not on site">Liverpool Street · X min</span></div><div data-i="hrs">Mon to Fri 6am to 8pm</div></div>
+        <div class="meta"><div data-i="adr">280 Bishopsgate, <span>EC2</span></div><div data-i="tube"><span>Liverpool Street · X min</span></div><div data-i="hrs">Mon to Fri 6am to 8pm</div></div>
         <div class="chips"><span class="chip">Gym · 2,200 sq ft</span><span class="chip">Treatment</span><span class="chip">Recovery</span></div>
       </div></div>
-      <div class="card club"><div class="ph"><em>Marylebone lounge photo</em></div><div class="in">
+      <div class="card club"><div class="ph"><em>Photo</em></div><div class="in">
         <div class="h3">Marylebone</div>
-        <div class="meta"><div data-i="adr"><span class="tbc" title="105 Wigmore St in nav, 1 Orchard St, W1H 6HJ on the PT page">105 Wigmore Street</span></div><div data-i="tube">Bond Street and Baker Street</div><div data-i="hrs">Mon to Thu 6am to 9pm</div></div>
+        <div class="meta"><div data-i="adr"><span>105 Wigmore Street</span></div><div data-i="tube">Bond Street and Baker Street</div><div data-i="hrs">Mon to Thu 6am to 9pm</div></div>
         <div class="chips"><span class="chip">Gym</span><span class="chip">Treatment</span><span class="chip">Medical</span><span class="chip">Dental</span></div>
       </div></div>
-      <div class="card club"><div class="ph"><em>Canary Wharf photo</em></div><div class="in">
+      <div class="card club"><div class="ph"><em>Photo</em></div><div class="in">
         <div class="h3">Canary Wharf</div>
         <div class="meta"><div data-i="adr">YY Building, 30 South Colonnade, E14</div><div data-i="tube">Across from the Jubilee line exit</div><div data-i="hrs">Mon to Fri 6am to 8pm</div></div>
         <div class="chips"><span class="chip">10,000 sq ft</span><span class="chip">All 6 space types</span></div>
@@ -346,10 +318,7 @@
     </div>
     <div class="strip"><span><b>Next: New York.</b> Upper East Side, opening early 2027.</span><span class="lnk">Join the waitlist</span></div>
   </section>
-
-  <!-- 04 FIND YOUR SPACE -->
   <section class="s band">
-    <span class="slabel">04 FIND YOUR SPACE</span>
     <div class="eyebrow">For practitioners</div>
     <h2 class="h2">Is there a room for your discipline?</h2>
     <div class="g5">
@@ -361,10 +330,7 @@
     </div>
     <p class="help">Not sure which space fits? <span class="lnk">Apply and we'll match you to the right club.</span></p>
   </section>
-
-  <!-- 05 MONEY -->
   <section class="s">
-    <span class="slabel">05 THE MONEY</span>
     <div class="cols">
       <div>
         <div class="eyebrow">Total financial freedom</div>
@@ -373,8 +339,8 @@
       </div>
       <div class="g3" style="margin-top:0">
         <div class="stat"><div class="n">0%</div><div class="l">Commission</div><div class="d">No commissions, no overhead costs</div></div>
-        <div class="stat"><div class="n">75%</div><div class="l">Up to, in savings</div><div class="d tbc" title="Method not stated on site">vs a traditional setup</div></div>
-        <div class="stat"><div class="n">93%</div><div class="l">More a month</div><div class="d tbc" title="Method not stated; 93% also used for two other claims">average member earnings</div></div>
+        <div class="stat"><div class="n">75%</div><div class="l">Up to, in savings</div><div class="d">vs a traditional setup</div></div>
+        <div class="stat"><div class="n">93%</div><div class="l">More a month</div><div class="d">average member earnings</div></div>
       </div>
     </div>
     <div class="vs">
@@ -383,16 +349,13 @@
       <div class="card feat"><div class="small">UNTIL</div><div class="big">£199 /mo + rooms by the hour</div><p>Thrive membership, then treatment rooms from £28/hr. Nothing to fit out.</p></div>
     </div>
   </section>
-
-  <!-- 06 HOW IT WORKS + MEMBERSHIP -->
   <section class="s band">
-    <span class="slabel">06 HOW IT WORKS + MEMBERSHIP</span>
     <div class="cols">
       <div>
         <div class="eyebrow">How it works</div>
         <h2 class="h2">Four steps to running your own practice</h2>
         <div class="steps">
-          <div class="step"><span class="k">01</span><div><b>Apply, 10 minutes.</b><p class="small">Our team is in touch within <span class="tbc" title="Same working day / one working day / 3 days across the site">one working day</span>. No hard sell.</p></div></div>
+          <div class="step"><span class="k">01</span><div><b>Apply, 10 minutes.</b><p class="small">Our team is in touch within <span>one working day</span>. No hard sell.</p></div></div>
           <div class="step"><span class="k">02</span><div><b>Join Thrive membership.</b><p class="small">Full access across all four clubs. No joining fee.</p></div></div>
           <div class="step"><span class="k">03</span><div><b>Book space by the hour.</b><p class="small">Buy credit bundles from £200 to £4,000. Bigger bundles, better hourly rates.</p></div></div>
           <div class="step"><span class="k">04</span><div><b>Grow with the community.</b><p class="small">Referrals, CPD, events and business support.</p></div></div>
@@ -403,16 +366,13 @@
         <div class="card feat"><span class="badge">For individuals</span><div class="h3">Thrive</div><div class="price">£199</div><p>per month, incl. VAT</p>
           <ul><li>Access all four UNTIL locations</li><li>Book any space type via the app</li><li>Community events and CPD</li><li>Cancel with 30 days' notice</li></ul>
           <div class="btnrow"><span class="btn">Apply now</span></div></div>
-        <div class="card"><div class="h3">Teams</div><div class="price tbc" title="£50 + £199/member live; £199 + £149/member in Bari's 11 Aug email">£50 + £199</div><p>per month, per member</p>
+        <div class="card"><div class="h3">Teams</div><div class="price">£50 + £199</div><p>per month, per member</p>
           <ul><li>For clinics and growing teams</li><li>One account, several practitioners</li><li>Everything in Thrive</li></ul>
           <div class="btnrow"><span class="btn ghost">Compare memberships</span></div></div>
       </div>
     </div>
   </section>
-
-  <!-- 07 MEMBER RESULTS -->
   <section class="s">
-    <span class="slabel">07 MEMBER RESULTS</span>
     <div class="eyebrow">Member results</div>
     <h2 class="h2">Practitioners grow here</h2>
     <div class="g5">
@@ -420,7 +380,7 @@
       <div class="card tile"><div class="n">+496%</div><p>practice growth after leaving the NHS</p><div class="who">Nick Guth<span>Physiotherapist · Liverpool St</span></div></div>
       <div class="card tile"><div class="n">2 → 8+</div><p>team members</p><div class="who">Kaizen Physio<span>Physiotherapists · Soho</span></div></div>
       <div class="card tile"><div class="n">Solo → 9</div><p>team built at UNTIL</p><div class="who">Charlie Goodchild<span>Founder of Better · Soho</span></div></div>
-      <div class="card tile"><div class="n">6X</div><p>revenue in under 12 months</p><div class="who">Dr Nora<span>Cosmetic Dermatologist · <span class="tbc" title="Marylebone on one page, Soho on another">Marylebone</span></span></div></div>
+      <div class="card tile"><div class="n">6X</div><p>revenue in under 12 months</p><div class="who">Dr Nora<span>Cosmetic Dermatologist · <span>Marylebone</span></span></div></div>
     </div>
     <div class="g3">
       <div class="card"><blockquote>"I went from sole practitioner to leading a team of nine. The model here makes that possible in a way a traditional lease never could."</blockquote><div class="cite">Charlie Goodchild<span>Physiotherapist and Founder of Better · UNTIL Soho</span></div></div>
@@ -429,10 +389,7 @@
     </div>
     <div class="btnrow"><span class="btn">Apply now</span><span class="lnk">Read more member stories</span></div>
   </section>
-
-  <!-- 08 HEALTH CONCIERGE -->
   <section class="s dark">
-    <span class="slabel">08 HEALTH CONCIERGE · FOR CLIENTS</span>
     <div class="cols">
       <div>
         <div class="eyebrow">For clients · Health Concierge</div>
@@ -448,40 +405,34 @@
     </div>
     <div class="eyebrow" style="margin-top:44px">Meet some of our practitioners</div>
     <div class="g6">
-      <div class="face"><div class="ph face"><em>photo</em></div><div class="who">Fattaneh<span>Dentist · Marylebone</span></div></div>
-      <div class="face"><div class="ph face"><em>photo</em></div><div class="who">Darel<span>Performance Physio · Marylebone</span></div></div>
-      <div class="face"><div class="ph face"><em>photo</em></div><div class="who">Adi<span>Counselling Psychologist · Soho</span></div></div>
-      <div class="face"><div class="ph face"><em>photo</em></div><div class="who">Dee<span>Sports Therapist · Soho</span></div></div>
-      <div class="face"><div class="ph face"><em>photo</em></div><div class="who">Russ<span>MSc Strength &amp; Conditioning · Soho</span></div></div>
-      <div class="face"><div class="ph face"><em>photo</em></div><div class="who">Marjolein<span>Nutritionist · Soho</span></div></div>
+      <div class="face"><div class="ph face"><em>Photo</em></div><div class="who">Fattaneh<span>Dentist · Marylebone</span></div></div>
+      <div class="face"><div class="ph face"><em>Photo</em></div><div class="who">Darel<span>Performance Physio · Marylebone</span></div></div>
+      <div class="face"><div class="ph face"><em>Photo</em></div><div class="who">Adi<span>Counselling Psychologist · Soho</span></div></div>
+      <div class="face"><div class="ph face"><em>Photo</em></div><div class="who">Dee<span>Sports Therapist · Soho</span></div></div>
+      <div class="face"><div class="ph face"><em>Photo</em></div><div class="who">Russ<span>MSc Strength &amp; Conditioning · Soho</span></div></div>
+      <div class="face"><div class="ph face"><em>Photo</em></div><div class="who">Marjolein<span>Nutritionist · Soho</span></div></div>
     </div>
     <div class="g2">
       <div class="card"><blockquote>"I reached out to UNTIL's Health Concierge to help with my back pain. Hayley matched me with a physiotherapist who's been incredible, professional, knowledgeable, and supportive."</blockquote><div class="cite">Amara<span>Health Concierge client</span></div></div>
       <div class="card"><p class="small">Many of our practitioners are covered by major insurers</p>
         <div class="logos"><span class="logo-ph">BUPA</span><span class="logo-ph">AVIVA</span><span class="logo-ph">AXA</span><span class="logo-ph">VITALITY</span><span class="logo-ph">WPA</span><span class="logo-ph">CIGNA</span></div>
-        <p class="small" style="margin-top:16px"><span class="tbc" title="Only stated for PT matching">250+ Londoners matched · 5/5 rated</span></p></div>
+        <p class="small" style="margin-top:16px"><span>250+ Londoners matched · 5/5 rated</span></p></div>
     </div>
     <div class="chips" style="margin-top:24px"><span class="chip">Find a personal trainer</span><span class="chip">Find a physiotherapist</span><span class="chip">Find a nutritionist</span><span class="chip">Find an aesthetics specialist</span><span class="chip">Book a blood test</span></div>
   </section>
-
-  <!-- 09 BARTLETT + PRESS -->
   <section class="s">
-    <span class="slabel">09 BACKED BY STEVEN BARTLETT + PRESS</span>
     <div class="cols" style="align-items:center">
-      <div class="ph"><em>Steven Bartlett at UNTIL (photo; video plays on click only)</em></div>
+      <div class="ph"><em>Photo</em></div>
       <div>
         <div class="eyebrow">Backed by Steven Bartlett</div>
         <blockquote class="h2" style="font-size:38px">"The future of health is personal. UNTIL gives you access to the right expert, not just any expert."</blockquote>
-        <div class="cite">Steven Bartlett<span class="tbc" title="'Marketing Co-founder' (2023), 'UNTIL Investor' (2026 LPs), 'Dragon & entrepreneur' (legacy)">UNTIL Investor · The Diary of a CEO</span></div>
+        <div class="cite">Steven Bartlett<span>UNTIL Investor · The Diary of a CEO</span></div>
       </div>
     </div>
     <div class="eyebrow" style="margin-top:44px">As featured in</div>
-    <div class="logos lt"><span class="logo-ph tbc" title="Logos only on site, no article links">EVENING STANDARD</span><span class="logo-ph">FORBES</span><span class="logo-ph">GQ</span><span class="logo-ph">DENTISTRY.CO.UK</span></div>
+    <div class="logos lt"><span class="logo-ph">EVENING STANDARD</span><span class="logo-ph">FORBES</span><span class="logo-ph">GQ</span><span class="logo-ph">DENTISTRY.CO.UK</span></div>
   </section>
-
-  <!-- 10 COMMUNITY + SOI -->
   <section class="s band">
-    <span class="slabel">10 COMMUNITY + STATE OF THE INDUSTRY</span>
     <div class="cols">
       <div>
         <div class="eyebrow">The referral network</div>
@@ -490,7 +441,7 @@
           <div class="stat"><div class="n">90%</div><div class="d">of members say the UNTIL community positively impacted their business</div></div>
           <div class="stat"><div class="n">71%</div><div class="d">say they'll never return to traditional employment</div></div>
         </div>
-        <p class="small" style="margin-top:12px">Source: UNTIL State of the Industry Report 2026, <span class="tbc" title="Sample size and date to confirm">500+ members surveyed</span></p>
+        <p class="small" style="margin-top:12px">Source: UNTIL State of the Industry Report 2026, <span>500+ members surveyed</span></p>
       </div>
       <div class="card"><div class="ph short"><em>Report cover</em></div>
         <div class="h3" style="margin-top:14px">The future of health and wellness in London 2026</div>
@@ -499,10 +450,7 @@
     </div>
     <div class="marquee"><span class="chip">Dentists</span><span class="chip">Personal Trainers</span><span class="chip">Pilates Instructors</span><span class="chip">Physios</span><span class="chip">Osteopaths</span><span class="chip">Chiropractors</span><span class="chip">Massage Therapists</span><span class="chip">Acupuncturists</span><span class="chip">Podiatrists</span><span class="chip">Therapists</span><span class="chip">Counsellors</span><span class="chip">Psychotherapists</span><span class="chip">Nutritionists</span><span class="chip">Coaches</span><span class="chip">Doctors</span><span class="chip">Aesthetic Practitioners</span></div>
   </section>
-
-  <!-- 11 FAQ -->
   <section class="s">
-    <span class="slabel">11 FAQ</span>
     <div class="cols">
       <div><div class="eyebrow">FAQ</div><h2 class="h2">Questions, answered</h2><div class="tabs"><span>For practitioners</span><span>For clients</span></div></div>
       <div class="faq">
@@ -514,37 +462,15 @@
       </div>
     </div>
   </section>
-
-  <!-- 12 FOOTER -->
   <div class="foot">
-    <div class="eyebrow">12 · Footer / Ink (existing component, already live)</div>
+    
     <div class="cols" style="align-items:center">
       <div class="h2">Find your space at UNTIL</div>
-      <div><div class="btnrow" style="margin-top:0"><span class="btn">Apply now</span><span class="btn ghost">Find a practitioner</span></div><p class="small" style="margin-top:12px">Discipline marquee · nav columns · socials · legal</p></div>
+      <div><div class="btnrow" style="margin-top:0"><span class="btn">Apply now</span><span class="btn ghost">Find a practitioner</span></div></div>
     </div>
   </div>
-
-  <!-- m DOCK -->
   <div class="dock"><span class="btn">Apply now</span><span class="btn ghost">Find a practitioner</span></div>
 </div>
-</template>
-
-<script>
-(function(){
-  var t=document.getElementById('wf');
-  var d=document.getElementById('f-desk'), m=document.getElementById('f-mob');
-  d.appendChild(t.content.cloneNode(true));
-  m.appendChild(t.content.cloneNode(true));
-  var bd=document.getElementById('v-desk'), bm=document.getElementById('v-mob');
-  function set(mob){
-    d.hidden=mob; m.hidden=!mob;
-    bd.setAttribute('aria-pressed',String(!mob)); bm.setAttribute('aria-pressed',String(mob));
-    try{localStorage.setItem('until-wf-view',mob?'m':'d')}catch(e){}
-  }
-  bd.addEventListener('click',function(){set(false)});
-  bm.addEventListener('click',function(){set(true)});
-  try{ if(localStorage.getItem('until-wf-view')==='m') set(true) }catch(e){}
-})();
-</script>
+</div>
 </body>
 </html>
